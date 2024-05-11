@@ -1,10 +1,27 @@
- import Me from "./index.jsx"
- function ReturnMe(){
+//  const products = [
+//   {title: ' carrot', isfruit:false, id:1},
+//   {title: 'banana',isFruit:true, id: 2},
+//   {title: ' Mango', isFruit:true, id :3}
+//  ]
+//  export default function ListItems(){
+//   const ListItem = products.map(product =>
+//     <li key = {product.id}
+//     style={{color:product.isFruit?'magenta':"springgreen"}}
+//     >
+//       {product.title}
+//     </li>
+//   )
+//   return(
+//     <ul>{ListItem}</ul>
+//   )
+  
+//  }
+ export default function Click(){
+  function Clickbutton(){
+    alert("you have clicked me")
+  }
   return(
-    <>
-    <Me/>   {/* React does not return more than one element. Use <frament> tag to return multiple  */}
-    <p> This is second element</p>
-    </>
+    <button onClick={Clickbutton}>click me</button>
   )
  }
- export default ReturnMe;
+ 
